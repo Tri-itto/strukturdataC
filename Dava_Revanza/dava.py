@@ -14,7 +14,7 @@ if menu == "Operasi Himpunan":
     set_a_input = st.text_input("Himpunan A", " ")
     set_b_input = st.text_input("Himpunan B", " ")
 
-    # Konversi ke set
+    # Konversi
     set_a = set(map(str.strip, set_a_input.split(",")))
     set_b = set(map(str.strip, set_b_input.split(",")))
 
@@ -37,7 +37,7 @@ if menu == "Operasi Himpunan":
         st.write("Difference (B - A):", difference_ba)
         st.write("Symmetric Difference:", symmetric_diff)
 
-    # Visualisasi sederhana (diagram batang)
+    # Visualisasi (diagram batang)
     st.subheader("Visualisasi Jumlah Elemen")
 
     labels = ["A", "B", "A∪B", "A∩B"]
@@ -56,7 +56,7 @@ elif menu == "Word Count":
     text_input = st.text_area("Masukkan komentar sosial media:", 
                               " ")
 
-    # Preprocessing sederhana
+    # Preprocessing
     words = text_input.lower().split()
     words = [word.strip(".,!?") for word in words]
 
