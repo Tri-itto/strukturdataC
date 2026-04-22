@@ -21,7 +21,7 @@ kuning.next = merah
 
 # 3. UI Streamlit
 st.title("🚦 Visualisasi Lampu Lalu Lintas")
-st.subheader("Implementasi Circular Linked List")
+st.subheader("Penerapan Circular Linked List")
 
 placeholder = st.empty()
 
